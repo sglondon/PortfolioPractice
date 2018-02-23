@@ -1,7 +1,7 @@
 ﻿.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 75px 75px 75px 300px 150px 50px 250px;
+    grid-template-rows: 75px 75px 75px 300px 150px 50px 250px ;
 }
 
 section.grid-item-1 {
@@ -33,9 +33,9 @@ section.grid-item-1 {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     /* Apply animation to this element */
-    -moz-animation: scroll-left 30s linear infinite;
-    -webkit-animation: scroll-left 30s linear infinite;
-    animation: scroll-left 30s linear infinite;
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
@@ -230,7 +230,7 @@ section.grid-item-3 {
     grid-row: 3 / span 5;
     background-image: url('images/me&clara.jpg');
     background-size: cover;
-    
+    margin-left: 10px;
 }
 
 img {
@@ -279,23 +279,25 @@ section.grid-item-7 {
     background-size: cover;
     background-color: lavender;
     grid-column: 5 /span 3;
+    margin-right:10px;
 }
 
 section.grid-item-8 {
     display: flex;
     color: darkblue;
     grid-column: 5;
+    margin-left: 10px;
     
     background-color: lightblue;
 }
 section.grid-item-9 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     color: darkblue;
     grid-column: 6 /span 2;
     grid-row: 5;
-    background-color:lightblue;
-    
+    background-color: lightblue;
+    margin-right: 10px;
 }
 i{
     display:flex;
@@ -314,23 +316,27 @@ section.grid-item-10 {
     background-size: cover;
     grid-row: 7/span 2;
     grid-column: 5 /span 3;
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 section.grid-item-11 {
-    display:flex;
+    display: flex;
     background-image: url('images/pexels-photo.jpg');
-    background-size:cover;
+    background-size: cover;
     grid-column: 3 /span 2;
-    grid-row:5 / span 2;
+    grid-row: 5 / span 2;
+    margin-left: 10px;
+    margin-top:10px;
 }
 section.grid-item-12 {
     display: flex;
     background-image: url('images/pexels-photo-12627 (1).jpeg');
-    background-size:cover;
-    grid-column:3 /span 2;
+    background-size: cover;
+    grid-column: 3 /span 2;
     grid-row: 7;
-
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 section.grid-item-13{
@@ -340,7 +346,6 @@ section.grid-item-13{
     color:darkblue;
     font-family:cursive;
 }
-
 
 
 
