@@ -22,7 +22,7 @@ grid-item-1 {
     -webkit-transform: translate3d(0,0,0);
 }
 
-div.slidein {
+div.slide {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;

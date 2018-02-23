@@ -1,4 +1,4 @@
-﻿ * {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -43,7 +43,6 @@ body {
 /*@import url('https://fonts.googleapis.com/css?family=Roboto:300');*/
 
 .header {
-    
     text-align: center;
     /*   background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);*/
     background-color: snow;
@@ -65,25 +64,26 @@ div {
     white-space: nowrap;
 }
 
-span{
+span {
     display: flex;
 }
-    div:first-of-type { /* For increasing performance 
+
+div:first-of-type { /* For increasing performance 
                        ID/Class should've been used. 
                        For a small demo 
                        it's okaish for now */
-        animation: showup 7s infinite;
-    }
+    animation: showup 7s infinite;
+}
 
-    div:last-of-type {
-        width: 0px;
-        animation: reveal 7s infinite;
-    }
+div:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
 
-        div:last-of-type span {
-            margin-left: -355px;
-            animation: slidein 7s infinite;
-        }
+    div:last-of-type span {
+        margin-left: -355px;
+        animation: slidein 7s infinite;
+    }
 
 @keyframes showup {
     0% {
@@ -153,8 +153,9 @@ p {
     margin-top: 200px;
 }
 
+header{
     background: yellowgreen;
-    height: 20vh;
+height: 20vh;
 }
 
 footer {
@@ -165,4 +166,3 @@ footer {
 header, footer, article, nav, aside {
     padding: 1em;
 }
-

@@ -4,10 +4,71 @@
     grid-template-rows: 75px 75px 250px 300px;
 }
 
-section.grid-item-1{
-    
+section.grid-item-1 {
     grid-column: 1 / span 7;
-    background-color:lightcoral;    
+    background-color: white;
+}
+  .scroll-left{
+
+
+    height: 750px;
+    font-family:cursive;
+    font-size:larger;
+    overflow: hidden;
+    position: relative;
+    color: darkblue;
+}
+
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 30s linear infinite;
+    -webkit-animation: scroll-left 30s linear infinite;
+    animation: scroll-left 30s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%);
+    }
+}
     }
 
 ul {
@@ -30,13 +91,116 @@ a {
 }
 section.grid-item-2 {
     display: flex;
-    flex-direction: row;
-    grid-column: 3 / span 3;
-    justify-content: center;
+    flex-direction: column;
+    grid-column: 1 / span2;
+    justify-content: flex-start;
     background-color: snow;
     color: darkblue;
 }
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+    .nav > .nav-header {
+        display: inline;
+    }
+
+        .nav > .nav-header > .nav-title {
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            padding: 10px 10px 10px 10px;
+        }
+
+    .nav > .nav-btn {
+        display: none;
+    }
+
+    .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+    }
+
+        .nav > .nav-links > a {
+            display: inline-block;
+            padding: 13px 10px 13px 10px;
+            text-decoration: none;
+            color: #efefef;
+        }
+
+            .nav > .nav-links > a:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+    .nav > #nav-check {
+        display: none;
+    }
+
+@media (max-width:600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+        .nav > .nav-btn > label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+        }
+
+            .nav > .nav-btn > label:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .nav > .nav-btn > label > span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+            }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color:darkblue;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+        .nav > .nav-links > a {
+            display: block;
+            width: 100%;
+        }
+
+    .nav > #nav-check:not(:checked) + .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked + .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
 
 .h1 {
     display: flex;
@@ -46,8 +210,8 @@ section.grid-item-2 {
 
 section.grid-item-3{
     display: flex;
-    grid-column: 3 / span 3;
-    justify-content: center;
+   grid-row: 3;
+    justify-content: flex-start;
 
 }
 
