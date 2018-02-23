@@ -1,17 +1,19 @@
 ﻿.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 75px 75px 250px 300px;
+    grid-template-rows: 75px 75px 200 px 300px;
 }
 
 section.grid-item-1 {
     grid-column: 1 / span 7;
     background-color: white;
 }
+
+/*Styling for the scrolling info across the top of the page*/
   .scroll-left{
 
 
-    height: 750px;
+    height: 50px;
     font-family:cursive;
     font-size:larger;
     overflow: hidden;
@@ -22,7 +24,7 @@ section.grid-item-1 {
 .scroll-left p {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50px;
     margin: 0;
     line-height: 50px;
     text-align: center;
@@ -69,7 +71,7 @@ section.grid-item-1 {
         transform: translateX(-100%);
     }
 }
-    }
+   /*styling for the nav bar*/ 
 
 ul {
     display: flex;
@@ -119,6 +121,7 @@ body {
 
         .nav > .nav-header > .nav-title {
             display: inline-block;
+            font-family: cursive;
             font-size: 22px;
             color: #fff;
             padding: 10px 10px 10px 10px;
@@ -203,25 +206,35 @@ body {
 }
 
 .h1 {
-    display: flex;
+    
     font-family: cursive;
-    font-size: larger;
+    
+    
 }
 
-section.grid-item-3{
-    display: flex;
-   grid-row: 3;
-    justify-content: flex-start;
+p.me{
+    
+    
+}
 
+section.grid-item-3 {
+    display: flex;
+    grid-column: 1 /span 2;
+    justify-content: flex-start;
 }
 
 img {
     display: flex;
-    grid-column: 3 / span 3;
-    justify-content: center;
+   
+    
 }
 
 
-section.gri-item-4{
+section.grid-item-4{
+display:flex;
+justify-content:center;
+margin-top: 20px;
+margin-left:0;
+grid-column:3 / span 2;
 
 }
