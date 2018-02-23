@@ -1,7 +1,7 @@
 ﻿.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 75px 75px 75px 300px 125px 50px 250px;
+    grid-template-rows: 75px 75px 75px 300px 150px 50px 250px;
 }
 
 section.grid-item-1 {
@@ -111,7 +111,7 @@ body {
 .nav {
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: darkblue;
     position: relative;
 }
 
@@ -248,7 +248,7 @@ section.grid-item-4 {
     justify-content: center;
     color:darkblue;
     margin-left:10px;
-    background-color:lavender;
+    background-color:lightblue;
     font-family:cursive;
     
 }
@@ -259,7 +259,7 @@ section.grid-item-5 {
     margin-top: 0;
     margin-left: 10px;
     grid-column: 3 / span 2;
-    background-color: lavender;
+    background-color: lightblue;
 }
 /*projects*/
 
@@ -297,6 +297,16 @@ section.grid-item-9 {
     background-color:lightblue;
     
 }
+i{
+    display:flex;
+    justify-content:flex-end;
+    grid-row:5;
+}
+
+a{
+    display:flex;
+    justify-content:flex-start;
+}
 
 section.grid-item-10 {
     display: flex;
@@ -306,3 +316,31 @@ section.grid-item-10 {
     grid-column: 5 /span 3;
     
 }
+
+section.grid-item-11 {
+    display:flex;
+    background-image: url('images/pexels-photo.jpg');
+    background-size:cover;
+    grid-column: 3 /span 2;
+    grid-row:5 / span 2;
+}
+section.grid-item-12 {
+    display: flex;
+    background-image: url('images/pexels-photo-12627 (1).jpeg');
+    background-size:cover;
+    grid-column:3 /span 2;
+    grid-row: 7;
+
+}
+
+section.grid-item-13{
+    display: flex;
+    grid-column:6;
+    grid-row:6;
+    color:darkblue;
+    font-family:cursive;
+}
+
+
+
+
