@@ -1,7 +1,7 @@
 ﻿.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 75px 75px 75px 400px 150px 50px 250px 150px 50px 200px 200px 150px;
+    grid-template-rows: 75px 75px 75px 400px 150px 50px 250px 150px 50px 200px 200px 125px;
 }
 
 section.grid-item-1 {
@@ -465,6 +465,18 @@ section.grid-item-24 {
     background-color: lightblue;
     margin-top: 10px;
 }
-section.grid-item-25{
+section.grid-item-25 {
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    grid-column: 2 /span 2;
+    grid-row: 9;
+}
 
+section.grid-item-26 {
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    grid-column: 2 /span 2;
+    grid-row: 10 /span 2;
 }
