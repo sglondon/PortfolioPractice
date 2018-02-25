@@ -1,12 +1,23 @@
 ﻿.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 75px 75px 75px 400px 150px 50px 250px 150px 50px 200px 200px 150px 50px;
+    grid-template-rows: 75px 75px 75px 400px 150px 75px 250px 150px 75px 225px 200px 150px 50px;
 }
+
+/*diplay for scrolling info*/
 
 section.grid-item-1 {
     grid-column: 1 / span 7;
     background-color: white;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    
 }
 
 /*Styling for the scrolling info across the top of the page*/
@@ -91,6 +102,9 @@ a {
   
 
 }
+
+/*styling for nav bar*/
+
 section.grid-item-2 {
     display: flex;
     flex-direction: column;
@@ -251,29 +265,53 @@ section.grid-item-4 {
     justify-content: center;
     color: darkblue;
     margin-left: 10px;
-    /*background-color:lightblue;*/
+    border-right: double;
+    border-right-color: darkblue;
     font-family: cursive;
+    border-top:double;
+    border-right: double;
+    border-bottom:double;
+    border-left:double;
+    border-right-color: darkblue;
+    border-left-color:darkblue;
+    border-top-color:darkblue;
+    border-bottom-color:darkblue;
 }
 
 section.grid-item-5 {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin-top: 0;
     margin-left: 10px;
     grid-column: 3 / span 2;
-    /*   background-color: lightblue; */
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
     color: darkblue;
     font-family: cursive;
 }
-/*projects*/
+/*project 1*/
 
 section.grid-item-6 {
     display: flex;
-    grid-column: 6;
+    grid-column: 5/span 3;
     grid-row: 3;
     justify-content: center;
     color: darkblue;
-    font-family:cursive;
+    font-family: cursive;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
 }
 
 section.grid-item-7 {
@@ -286,6 +324,8 @@ section.grid-item-7 {
     margin-right:10px;
 }
 
+/*project 2*/
+
 section.grid-item-8 {
     display: flex;
     color: darkblue;
@@ -293,6 +333,14 @@ section.grid-item-8 {
     margin-left: 10px;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+        
+    border-bottom: double;
+    border-left: double;
+    
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
 }
 section.grid-item-9 {
     display: flex;
@@ -303,6 +351,14 @@ section.grid-item-9 {
     background-color: lightblue;
     margin-right: 10px;
     margin-top: 10px;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    
+    border-right-color: darkblue;
+   
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
 }
 i{
     display:flex;
@@ -314,6 +370,7 @@ a{
     display:flex;
     justify-content:flex-start;
 }
+/*project 3*/
 
 section.grid-item-10 {
     display: flex;
@@ -324,15 +381,16 @@ section.grid-item-10 {
     margin-left: 10px;
     margin-right: 10px;
 }
-
+/*pictures*/
 section.grid-item-11 {
     display: flex;
-     background-image: url('images/pexels-photo.jpg');
+    background-image: url('images/pexels-photo.jpg');
     background-size: cover;
     grid-column: 3 /span 2;
     grid-row: 5 / span 2;
     margin-left: 10px;
     margin-top: 10px;
+    
 }
 section.grid-item-12 {
     display: flex;
@@ -343,15 +401,26 @@ section.grid-item-12 {
     margin-left: 10px;
     margin-top: 10px;
 }
-
-section.grid-item-13{
+/*project 2*/
+section.grid-item-13 {
     display: flex;
-    grid-column:6;
-    grid-row:6;
-    color:darkblue;
-    font-family:cursive;
-   
-}
+    grid-column: 5 /span 3;
+    justify-content: center;
+    grid-row: 6;
+    color: darkblue;
+    font-family: cursive;
+    border-top: double;
+    border-right: double;
+    border-bottom:double;    
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color:darkblue;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+/*project 3*/
 
 section.grid-item-14 {
     display: flex;
@@ -361,6 +430,16 @@ section.grid-item-14 {
     margin-left: 10px;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+    
+    border-bottom: double;
+    border-left: double;
+    
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    
+    margin-left: 10px;
 }
 
 section.grid-item-15 {
@@ -372,6 +451,16 @@ section.grid-item-15 {
     background-color: lightblue;
     margin-right: 10px;
     margin-top: 10px;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    
+    border-right-color: darkblue;
+    
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    margin-right: 10px;
+    
 }
 
 section.grid-item-16 {
@@ -396,10 +485,21 @@ section.grid-item-17 {
 
 section.grid-item-18 {
     display: flex;
-    grid-column: 6;
+    grid-column: 5/span 3;
+    justify-content: center;
     grid-row: 9;
     color: darkblue;
     font-family: cursive;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 section.grid-item-19 {
     display: flex;
@@ -409,6 +509,16 @@ section.grid-item-19 {
     margin-left: 10px;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+    
+    border-bottom: double;
+    border-left: double;
+    
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    
+    margin-left: 10px;
 }
 
 section.grid-item-20 {
@@ -418,9 +528,19 @@ section.grid-item-20 {
     grid-column: 6 /span 2;
     grid-row: 12;
     background-color: lightblue;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    
+    border-right-color: darkblue;
+    
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
     margin-right: 10px;
+    
     margin-top: 10px;
 }
+/*contact me*/
 section.grid-item-21 {
     display: flex;
     justify-content: center;
@@ -430,6 +550,15 @@ section.grid-item-21 {
     background-color: lightblue;
     margin-top: 10px;
     margin-left: 10px;
+    border-top: double;
+    
+    border-bottom: double;
+    border-left: double;
+    
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+   
 }
 
 
@@ -443,6 +572,16 @@ section.grid-item-22 {
     grid-row: 8;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+    
+    border-bottom: double;
+    
+    
+    
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    
+    
 }
 
 section.grid-item-23 {
@@ -454,6 +593,16 @@ section.grid-item-23 {
     grid-row: 8;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+    
+    border-bottom: double;
+    
+    
+   
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    
+    
 }
 
 section.grid-item-24 {
@@ -465,23 +614,52 @@ section.grid-item-24 {
     grid-row: 8;
     background-color: lightblue;
     margin-top: 10px;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    
+    border-right-color: darkblue;
+    
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    margin-right: 10px;
+    
 }
+
+/*my skills*/
 section.grid-item-25 {
     display: flex;
     justify-content: center;
     color: darkblue;
-    grid-column: 2 /span 2;
+    grid-column: 1 /span 4;
     grid-row: 9;
+    border-bottom:double;
+    border-bottom-color:darkblue;
+    border-left:double;
+    border-right:double;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 section.grid-item-26 {
     display: flex;
     justify-content: center;
     color: darkblue;
-    grid-column: 2 /span 2;
-    grid-row: 10 /span 2;
+    grid-column: 1 /span 4;
+    grid-row: 10 ;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:5px;
 }
-
+/*picture*/
 section.grid-item-27 {
     display: flex;
     background-image: url('images/pexels-photo-204686.jpeg');
@@ -489,13 +667,28 @@ section.grid-item-27 {
     grid-column: 1 /span 4;
     grid-row: 11 /span 2;
     margin-left: 10px;
+    margin-top:10px;
+    margin-right:10px;
+    
+
 }
 
+/*created by*/
 section.grid-item-28 {
     display: flex;
-    grid-column: 3 /span 3;
-    color:darkblue;
-    justify-content:center;
-    font-weight:bold;
+    grid-column: 1 /span 7;
+    color: darkblue;
+    justify-content: center;
+    font-weight: bold;
     grid-row: 13;
+    border-top: double;
+    border-right: double;
+    border-bottom: double;
+    border-left: double;
+    border-right-color: darkblue;
+    border-left-color: darkblue;
+    border-top-color: darkblue;
+    border-bottom-color: darkblue;
+    margin-right: 10px;
+    margin-left: 10px;
 }
